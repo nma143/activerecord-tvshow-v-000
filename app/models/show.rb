@@ -29,6 +29,10 @@ class Show < ActiveRecord::Base
     #returns an array of all of the shows that have a rating greater than 5
     self.where("rating > ?", 5)
   end
+  def self.shows_by_alphabetical_order
+    #returns an array of all of the shows sorted by alphabetical order according to their names
+    self.order('name')
+  end
 
 
 end
