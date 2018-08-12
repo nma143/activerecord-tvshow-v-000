@@ -20,4 +20,4 @@ if ENV["ACTIVE_RECORD_ENV"] == "test"
   ActiveRecord::Migration.verbose = false
 end
 
-require_relative "../app/models/show.rb"
+#require_relative "../app/models/show.rb"
